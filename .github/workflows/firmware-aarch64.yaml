@@ -123,7 +123,7 @@ jobs:
           if [[ "${{ github.event.inputs.teacup_only }}" == 'true' ]]; then
             CONFIGS=$(find configs/cameras/ -type f -name "*defconfig" | sort | sed 's|.*/\(.*\)_defconfig|\1|' | grep teacup)
           else
-            CONFIGS=$(find configs/cameras-exp/ -type f -name "*defconfig" | sort | sed 's|.*/\(.*\)_defconfig|\1|')
+            CONFIGS=$(find configs/cameras-exp/jienuo_jn107are_t31x/ -type f -name "*defconfig" | sort | sed 's|.*/\(.*\)_defconfig|\1|')
           fi
           JSON_MATRIX="{\"thingino-version\": ["
           for CONFIG in $CONFIGS; do
