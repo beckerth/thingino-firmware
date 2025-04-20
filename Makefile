@@ -72,7 +72,7 @@ ifeq ($(GROUP),github)
 else ifeq ($(GROUP),modules)
 	CAMERA_SUBDIR := configs/modules
 else ifeq ($(GROUP),)
-	CAMERA_SUBDIR := configs/cameras
+	CAMERA_SUBDIR := configs/cameras-exp
 else
 	CAMERA_SUBDIR := configs/cameras-$(GROUP)
 endif
